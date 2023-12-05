@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/gradient_animation_rect_speed"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome To"
+            android:alpha="0.75"
+            android:gravity="center"
+            android:background="@color/colorTransparent"
+            android:padding="5dp"
+            android:shadowColor="#fff"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="TextContrastCheck"
+            android:fontFamily="sans-serif-black"
+            android:textSize="58dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:src="@drawable/logo"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

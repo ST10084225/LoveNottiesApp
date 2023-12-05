@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/autumn_gradient_animation_rect"
+    android:orientation="vertical"
+    android:id="@+id/mainLin"
+    tools:context=".LoadingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:id="@+id/HeaderLayout"
+        android:gravity="end"
+        android:background="@drawable/autumn_gradient_animation_rect_inv"
+        android:padding="5dp">
+        <RelativeLayout
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/HeaderLogo"
+            android:layout_gravity="center"
+            android:background="@drawable/green_gradient_oval">
+            <ImageView
+                android:id="@+id/imgBackground"
+                android:layout_width="33dp"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/logo"
+                android:fadingEdge="vertical"
+                android:scaleType="centerCrop"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Love Notties"
+            android:alpha="0.90"
+            android:gravity="center"
+            android:background="@color/colorTransparent"
+            android:padding="5dp"
+            android:shadowColor="#fff"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            tools:ignore="TextContrastCheck"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Home"
+            android:alpha="0.90"
+            android:background="@color/colorTransparent"
+            android:padding="5dp"
+            android:shadowColor="#fff"
+            android:shadowDx="0.0"
+            android:shadowDy="0.0"
+            android:shadowRadius="8"
+            android:textColor="@color/white"
+            android:textAlignment="textEnd"
+            android:textColorHint="@color/white"
+            tools:ignore="TextContrastCheck"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:background="@color/colorTransparent"
+            app:cardBackgroundColor="@color/colorTransparent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="16dp"
+            tools:ignore="DuplicateClickableBoundsCheck">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:shadowColor="#fff"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="8"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/white"
+                        android:textSize="50sp"
+                        android:text="@string/hlonipa"
+                        android:fontFamily="sans-serif-condensed-medium"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:shadowColor="#fff"
+                        android:shadowDx="0.0"
+                        android:shadowDy="0.0"
+                        android:shadowRadius="8"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:text="Respect For One's Community"/>
+
+                </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBody"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/BgSecondary"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    app:layout_constraintTop_toBottomOf="@+id/cardViewOne"
+                    tools:ignore="DuplicateClickableBoundsCheck">
+
+                    <RelativeLayout
+                        android:id="@+id/rlNoData"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/imgView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:fadingEdge="vertical"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/litter_clean_up"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/whatsOn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.64"
+                            android:background="@color/black"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            tools:layout_editor_absoluteX="76dp"
+                            tools:layout_editor_absoluteY="430dp" />
+
+                        <TextView
+                            android:id="@+id/tv_no_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:shadowColor="#fff"
+                            android:shadowDx="0.0"
+                            android:shadowDy="0.0"
+                            android:shadowRadius="8"
+                            android:text="Whats on?"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFF"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+
+                    android:clickable="true"
+                    app:layout_constraintTop_toBottomOf="@+id/whatsOn"
+                    tools:ignore="DuplicateClickableBoundsCheck">
+
+                    <RelativeLayout
+                        android:id="@+id/rlNoData2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/imgView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:fadingEdge="vertical"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/parks"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/environment"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.64"
+                            android:background="@color/black"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            tools:layout_editor_absoluteX="76dp"
+                            tools:layout_editor_absoluteY="430dp" />
+
+                        <TextView
+                            android:id="@+id/tv_no_data2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:shadowColor="#fff"
+                            android:shadowDx="0.0"
+                            android:shadowDy="0.0"
+                            android:shadowRadius="8"
+                            android:text="Environment"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFF"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    app:layout_constraintTop_toBottomOf="@+id/environment"
+                    tools:ignore="DuplicateClickableBoundsCheck">
+
+                    <RelativeLayout
+                        android:id="@+id/rlNoData3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/imgView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:fadingEdge="vertical"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/education_image"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/education"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.64"
+                            android:background="@color/black"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            tools:layout_editor_absoluteX="76dp"
+                            tools:layout_editor_absoluteY="430dp" />
+
+                        <TextView
+                            android:id="@+id/tv_no_data3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:shadowColor="#fff"
+                            android:shadowDx="0.0"
+                            android:shadowDy="0.0"
+                            android:shadowRadius="8"
+                            android:text="Education"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFF"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    app:layout_constraintTop_toBottomOf="@+id/education"
+                    tools:ignore="DuplicateClickableBoundsCheck">
+
+                    <RelativeLayout
+                        android:id="@+id/rlNoData4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+                        <ImageView
+                            android:id="@+id/imgView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:fadingEdge="vertical"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/humanity_image"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/humanity"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:alpha="0.64"
+                            android:background="@color/black"
+                            android:gravity="center"
+                            android:textColor="#000000"
+                            tools:layout_editor_absoluteX="76dp"
+                            tools:layout_editor_absoluteY="430dp" />
+
+                        <TextView
+                            android:id="@+id/tv_no_data4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:shadowColor="#fff"
+                            android:shadowDx="0.0"
+                            android:shadowDy="0.0"
+                            android:shadowRadius="8"
+                            android:text="Humanity"
+                            android:textAppearance="?android:textAppearanceMedium"
+                            android:textColor="#FFF"
+                            android:textSize="30sp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/autumn_gradient_animation_rect_inv"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@color/black"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintVertical_bias="0.976"
+        app:menu="@menu/bottom_menu" />
+
+</LinearLayout>

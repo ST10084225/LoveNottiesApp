@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:duration="1500"
+        android:drawable="@drawable/autumn_gradient_7"/>
+
+    <item android:duration="1500"
+        android:drawable="@drawable/autumn_gradient_6"/>
+
+    <item android:duration="1500"
+        android:drawable="@drawable/autumn_gradient_5"/>
+
+    <item android:duration="1500"
+        android:drawable="@drawable/autumn_gradient_4"/>
+
+    <item android:duration="1500"
+        android:drawable="@drawable/autumn_gradient_3"/>
+
+    <item android:duration="1500"
+        android:drawable="@drawable/autumn_gradient_2"/>
+
+
+    <item android:duration="1500"
+        android:drawable="@drawable/autumn_gradient"/>
+
+
+
+
+
+
+
+
+
+
+
+
+</animation-list>
